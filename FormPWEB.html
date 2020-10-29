@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Profile</title>
+	<link href="My Profile.css" rel="stylesheet" type="text/css">
+</head>
+<body class="background">
+	<div class="menu">
+		<ul type="disc">
+			<li><a href="beranda.html" style="margin-left: 225px;"><img src="logo.jpg" width="180" height="50"></a></li>
+			<li><a href="beranda.html" style="margin-left: 85px; padding-top: 27px"><b>Beranda</b></a></li>
+			<li><a href="jadwal.html" class="menu2"><b>Jadwal</b></a></li>
+			<li><a href="jelajah.html" class="menu2"><b>Jelajah</b></a></li>
+			<li><a href="favorit.html" class="menu2"><b>Favorit</b></a></li>
+			<li><a href="bookmark.html" class="menu2"><b>Bookmark</b></a></li>
+			<li><input class="cari" type="search" name="cari" placeholder="Cari...">
+				<button class="buttonCari"><b>Cari</b></button></li>
+			<li><a href="FormPWEB.html" style="margin-left: 1082px; margin-top: -42.9px; width: 20px"><img src="Profil.jpg" width="40" height="40"></a></li>
+		</ul>
+	</div>
+	<table class="table1">
+	<tr>
+	<td align="center" valign="middle">
+		<table class="kotak">
+			<tr>
+				<td></td>
+				<td valign="2" colspan="2">
+					<br>
+					<h1 class="petunjuk">Petunjuk Pengisian Profil Anggota</h1>
+				</td>
+			</tr>
+			<tr>
+				<td valign="2" colspan="2">
+					<ul class="penjelasan"> 
+						<li>Pastikan data yang anda masukkan sesuai dengan kartu identitas yang berlaku, benar, dan dapat dipertanggungjawabkan.</li>
+						<li>Inputan dengan tanda * wajib diisi.</li>
+						<li>Klik <a href="beranda.html">save</a>, jika anda sudah selesai mengubah profil Anda.</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td valign="2" colspan="2">
+					<hr class="garis">
+					<br>
+					<b class="judul">DATA DIRI</b>
+					<form method="post" action="proses.php">
+						<table cellspacing="0" class="tableDataDiri">
+							<tr>
+								<td height="50"><b class="dataDiri">NIS/NIM/NIP *</b></td>
+								<td width="50">:</td>
+								<td><input class="diri" name="NIS/NIM/NIP" type="number" placeholder="Masukkan NIS/NIM/NIP"/></td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Nama Lengkap *</b></td>
+								<td>:</td>
+								<td><input class="diri" name="NamaLengkap" type="text" placeholder="Masukkan Nama Lengkap Anda"/></td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Nama Panggilan</b></td>
+								<td>:</td>
+								<td><input class="diri" name="NamaPanggilan" type="text" placeholder="Masukkan Nama Panggilan Anda"/></td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Kota Lahir *</b></td>
+								<td>:</td>
+								<td height="40">
+									<select class="select" nama="tempatLahir" id = "tempatLahir">
+										<option value="a">-Pilih Kota-</option>
+										<option value="b">Kediri</option>
+										<option value="c">Jember</option>
+										<option value="d">Blitar</option>
+										<option value="e">Tulung Agung</option>
+										<option value="f">Jakarta</option>
+										<option value="g">Trenggalek</option>
+										<option value="h">Jombang</option>
+										<option value="i">Pasuruan</option>
+										<option value="j">Banyuwangi</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Tanggal Lahir *</b></td>
+								<td>:</td>
+								<td><input class="tanggal" type="date" name="Tanggal"></td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Nomor HP</b></td>
+								<td>:</td>
+								<td><input class="diri" name="NomorHp" type="number" placeholder="Masukkan Tanpa Tanda Pemisah"/></td>
+							</tr>
+							<tr>
+								<td width="800" height="50"><b class="dataDiri">Hobi</b></td>
+								<td>:</td>
+								<td>
+									<input class="radio" type="checkbox" name="Hobi" value="1">
+									<span class="pilihan">Membaca</span>
+									<input class="radio2" type="checkbox" name="Hobi" value="2">
+									<span class="pilihan">Menulis</span><br>
+									<input class="radio" type="checkbox" name="Hobi" value="3">
+									<span class="pilihan">Menyanyi</span>
+									<input class="radio3" type="checkbox" name="Hobi" value="4">
+									<span class="pilihan">Menari</span><br>
+									<input class="radio" type="checkbox" name="Hobi" value="5">
+									<span class="pilihan">Menonton Film</span><br>
+								</td>
+							<tr>
+								<td height="50"><b class="dataDiri">Alamat Email *</b></td>
+								<td>:</td>
+								<td><input class="diri" name="AlamatEmail" type="text" placeholder="Masukkan Email"/></td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Jenis Kelamin *</b></td>
+								<td>:</td>
+								<td height="40">
+									<input class="radio" name="JenisKelamin" type="radio"/><span class="pilihan">Laki-laki</span><br>
+									<input class="radio" name="JenisKelamin" type="radio"/><span class="pilihan">Perempuan</span><br>
+								</td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Jenis Anggota *</b></td>
+								<td>:</td>
+								<td height="40">
+									<select class="select" nama="jenisAnggota" id = "jenisAnggota">
+										<option value="a">-Pilih Jenis Anggota-</option>
+										<option value="b">Pelajar</option>
+										<option value="c">Mahasiswa</option>
+										<option value="d">Umum</option>
+										<option value="e">Peneliti</option>
+										<option value="f">Karyawan</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Status Perkawinan</b></td>
+								<td>:</td>
+								<td height="40">
+									<input class="radio" name="JenisKelamin" type="radio"/><span class="pilihan">Belum Menikah</span><br>
+									<input class="radio" name="JenisKelamin" type="radio"/><span class="pilihan">Menikah</span><br>
+								</td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Pekerjaan *</b></td>
+								<td>:</td>
+								<td height="40">
+									<select class="select" nama="kerja" id = "kerja">
+										<option value="a">-Pilih Pekerjaan-</option>
+										<option value="b">Mahasiswa</option>
+										<option value="e">Pelajar</option>
+										<option value="c">Pegawai Swasta</option>
+										<option value="d">Pegawai Negeri</option>
+										<option value="e">Wiraswasta</option>
+										<option value="e">Guru</option>
+										<option value="e">Dosen</option>
+										<option value="e">Peneliti</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Alamat Tinggal *</b></td>
+								<td>:</td>
+								<td>
+									<textarea placeholder="Masukkan Alamat Anda sesuai Identitas" class="textarea"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td height="20"><b class="dataDiri"></b></td>
+								<td></td>
+								<td height="30">
+									<select class="select" nama="alamatTinggal" id = "alamatTinggal">
+										<option value="a">-Pilih Kota-</option>
+										<option value="b">Kediri</option>
+										<option value="c">Jember</option>
+										<option value="d">Blitar</option>
+										<option value="e">Tulung Agung</option>
+										<option value="f">Jakarta</option>
+										<option value="g">Trenggalek</option>
+										<option value="h">Jombang</option>
+										<option value="i">Pasuruan</option>
+										<option value="j">Banyuwangi</option>
+									</select>
+									<select class="select2" nama="alamatTinggal" id = "alamatTinggal">
+										<option value="a">-Pilih Provinsi-</option>
+										<option value="b">Jawa Timur</option>
+										<option value="c">Jawa Tengah</option>
+										<option value="d">Jawa Barat</option>
+										<option value="e">Jakarta</option>
+										<option value="f">Daerah Istimewa Yogyakarta</option>
+										<option value="g">Banten</option>
+										<option value="h">Sumatra Utara</option>
+										<option value="i">Sumatra Barat</option>
+										<option value="j">Riau</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td valign="2" colspan="2">
+					<hr class="garis">
+					<br>
+					<b class="judul">DATA PENDIDIKAN</b>
+					<form method="post" action="proses.php">
+						<table cellspacing="0" class="tableDataDiri">
+							<tr>
+								<td height="50" width="700"><b class="dataDiri">Nama Institusi *</b></td>
+								<td width="50">:</td>
+								<td><input class="diri" name="NamaInstitusi" type="text" placeholder="Masukkan Nama Sekolah/Universitas/Instansi/Kantor"/></td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Alamat Institusi</b></td>
+								<td>:</td>
+								<td>
+									<textarea placeholder="Masukkan Alamat Institusi" class="textarea"></textarea>
+								</td>
+							</tr>
+							<tr>
+								<td height="20"><b class="dataDiri"></b></td>
+								<td></td>
+								<td height="30">
+									<select class="select" nama="alamatInstitusi" id = "alamatInstitusi">
+										<option value="a">-Pilih Kota-</option>
+										<option value="b">Kediri</option>
+										<option value="c">Jember</option>
+										<option value="d">Blitar</option>
+										<option value="e">Tulung Agung</option>
+										<option value="f">Jakarta</option>
+										<option value="g">Trenggalek</option>
+										<option value="h">Jombang</option>
+										<option value="i">Pasuruan</option>
+										<option value="j">Banyuwangi</option>
+									</select>
+									<select class="select2" nama="alamatInstitusi" id = "alamatInstitusi">
+										<option value="a">-Pilih Provinsi-</option>
+										<option value="b">Jawa Timur</option>
+										<option value="c">Jawa Tengah</option>
+										<option value="d">Jawa Barat</option>
+										<option value="e">Jakarta</option>
+										<option value="f">Daerah Istimewa Yogyakarta</option>
+										<option value="g">Banten</option>
+										<option value="h">Sumatra Utara</option>
+										<option value="i">Sumatra Barat</option>
+										<option value="j">Riau</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Kelas/Semester *</b></td>
+								<td width="50">:</td>
+								<td>
+									<input class="diri" name="Kelas/Semester" type="text" placeholder="Masukkan Kelas/Semester"/>
+								</td>
+							</tr>
+							<tr>
+								<td height="50"><b class="dataDiri">Jurusan</b></td>
+								<td width="50">:</td>
+								<td>
+									<input class="diri" name="Jurusan" type="text" placeholder="Masukkan Jurusan"/>
+								</td>
+							</tr>
+							<tr>
+								<td height="20"></td>
+								<td></td>
+								<td height="30">
+									<button class="button"><b>SAVE</b></button>
+									<button class="button2"><b>RESET</b></button>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</td>
+			</tr>
+		</table>
+		<table class="footer">
+			<tr>
+				<td height="30"><span class="footer1" style="padding-left: 225px;">Alamat :</span><span class="footer1" style="padding-left: 275px;">Dikerjakan Oleh:</span><span class="footer1" style="padding-left: 170px;">Didukung Oleh:</span></td>
+			</tr>
+			<tr>
+				<td height="8"><span class="footer2" style="padding-left: 240px;">Kampus Tegalboto, Jl. Kalimantan No.37,</span><span class="footer2" style="padding-left: 100px;">Firra </span><span class="footer2" style="word-spacing: 49px;"> Andriani (192410101028)</span></td>
+			</tr>
+			<tr>
+				<td height="7"><span class="footer2" style="padding-left: 240px;">Krajan Timur, Sumbersari,</span><span class="footer2" style="padding-left: 193px;">Anung Firdauzy Putra (192410101122)</span></td>
+			</tr>
+			<tr>
+				<td height="7"><span class="footer2" style="padding-left: 240px;">Kec. Sumbersari, Kabupaten Jember,</span></td>
+			</tr>
+			<tr>
+				<td height="7"><span class="footer2" style="padding-left: 240px;">Jawa Timur, 68121</span></td>
+			</tr>
+			<tr>
+				<td height="7"><span class="footer2" style="padding-left: 240px;">Telp.(0331) 330224</span><span><img src="logounej.png" width="110" height="110" class="imgfoot"></span></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+</body>
+</html>

@@ -1,0 +1,281 @@
+.background {
+	background-color: #ebebeb;
+}
+
+* {
+	margin:0; 
+	padding: 0;
+}
+
+.menu {
+	background-color: #4b00ff; 
+	height: 50px;
+	width: 1349px;
+	font-size: 14px;
+	position: relative;
+}
+ 
+.menu ul {
+	list-style: none;
+}
+ 
+.menu ul li a {
+	float: left; 
+	width: 100px; 
+	height: 23px;
+	display: block; 
+	text-align: center;
+	text-decoration: none; 
+	color: #FFFFFF;
+}
+
+.menu ul li a:hover {
+	background-color: #47a0ff;
+	display: block;
+}
+
+.menu li:hover a {
+	text-align: center;
+	color: #ffffff;
+}
+
+.menu2 {
+	padding-top: 27px;
+}
+
+.cari {
+	margin-top: 22px;
+	margin-left: 7px;
+	border: none;
+	border-bottom-left-radius: 2px;
+	border-top-left-radius: 2px;
+	border: none;
+	height: 20px;
+	width: 120px;
+	padding-left: 8px;
+	outline: none;
+}
+
+.buttonCari {
+	width: 40px;
+	height: 20px;
+	border: none;
+	background-color: #47a0ff;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	color: #ffffff;
+	font-size: 13px;
+	margin-top: 18px;
+	margin-left: -4px;
+	outline: none;
+}
+
+.table1 {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.kotak {
+	height: 1340px;
+	padding: 0px;
+	display: inline-block;
+	opacity: 1;
+	border-radius: 8px;
+	border: 1px solid #CED5F2;
+	width: 720px;
+	background: white;
+	box-shadow: 0 5px 5px 0;
+}
+
+.petunjuk {
+	font-family: Helvetica;
+	text-align: center;
+}
+
+.penjelasan {
+	font-family: Helvetica;
+	margin-left: 35px;
+	margin-top: 10px;
+	margin-right: 25px;
+	text-align: justify;
+	line-height: 25px;
+}
+
+.judul {
+	font-size: 30px;
+	font-family: Helvetica;
+	margin-left: 15px;
+}
+
+.dataDiri {
+	font-family: Helvetica;
+	font-size: 14px;
+	padding-left: 15px;
+	padding-right: 25px;
+}
+
+.diri {
+	background-color: rgba(235, 235, 235, 0.4);
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	outline: none;
+	border-radius: 8px;
+	width: 490px;
+	height: 30px;
+	padding-left: 10px;
+	font-family: Helvetica;
+}
+
+.tableDataDiri {
+	font-family: Helvetica;
+}
+
+.tanggal {
+	padding-left: 8px;
+	height: 30px;
+	background-color: rgba(235, 235, 235, 0.4);
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	outline: none;
+	border-radius: 8px;
+	width: 200px;
+	font-family: Helvetica;
+}
+
+.select {
+	background-color: rgba(235, 235, 235, 0.4);
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	outline: none;
+	border-radius: 8px;
+	height: 30px;
+	width: 208px;
+	padding-left: 8px;
+}
+
+.select2 {
+	background-color: rgba(235, 235, 235, 0.4);
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	outline: none;
+	border-radius: 8px;
+	height: 30px;
+	width: 208px;
+	margin-left: 10px;
+	padding-left: 8px;
+}
+
+.radio {
+	margin-left: 10px;
+	font-size: 5px;
+	height: 10px;
+}
+
+.pilihan {
+	font-size: 13px;
+	font-family: Helvetica;
+	margin-left: 8px;
+}
+
+.radio2 {
+	margin-left: 130px;
+	font-size: 5px;
+	height: 10px;
+}
+
+.radio3 {
+	margin-left: 131px;
+	font-size: 5px;
+	height: 10px;
+}
+
+.textarea {
+	font-size: 13px;
+	font-family: Helvetica;
+	height: 60px;
+	width: 493px;
+	margin-right: 20px;
+	background-color: rgba(235, 235, 235, 0.4);
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	outline: none;
+	border-radius: 8px;
+	padding-left: 8px;
+	padding-top: 8px;
+}
+
+.garis {
+	margin-top: 20px;
+	border: 0.5px solid #ebebeb;
+	width: 675px;
+	margin-left: 15px;
+}
+
+.button {
+	width: 100px;
+	height: 30px;
+	border: 2px solid #007bff;
+	background-color: #007bff;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 13px;
+	float: right;
+	margin-top: 12px;
+	margin-right: 20px;
+	outline: none;
+}
+
+.button2 {
+	width: 100px;
+	height: 30px;
+	border: 2px solid #959696;
+	background-color: #959696;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: 13px;
+	float: right;
+	margin-top: 12px;
+	margin-right: 10px;
+	outline: none;
+}
+
+.footer {
+	width: 100%;
+	height: 150px;
+	margin-top: 11px;
+	background-color: #4b00ff; 
+}
+
+.footer1 {
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-family: Helvetica;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.footer2 {
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-family: Helvetica;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.imgfoot {
+	margin-top: -110px;
+	margin-left: 640px;
+}
