@@ -8,11 +8,12 @@
 }
 
 .menu {
-	background-color: #4b00ff; 
-	height: 50px;
-	width: 1349px;
+	background-color: #4800ff; 
+	font-family: open sans;
+	height: 7.8%;
+	width: 100%;
 	font-size: 14px;
-	position: relative;
+	position: fixed;
 }
  
 .menu ul {
@@ -21,8 +22,8 @@
  
 .menu ul li a {
 	float: left; 
-	width: 100px; 
-	height: 23px;
+	width: 6.8%; 
+	height: 27px;
 	display: block; 
 	text-align: center;
 	text-decoration: none; 
@@ -40,52 +41,42 @@
 }
 
 .menu2 {
-	padding-top: 27px;
+	padding-top: 1.8%;
 }
 
 .cari {
-	margin-top: 22px;
-	margin-left: 7px;
+	margin-top: 1.8%;
 	border: none;
-	border-bottom-left-radius: 2px;
-	border-top-left-radius: 2px;
+	border-radius: 2px;
 	border: none;
 	height: 20px;
 	width: 120px;
 	padding-left: 8px;
+	margin-left: 4.6%;
 	outline: none;
 }
 
-.buttonCari {
-	width: 40px;
-	height: 20px;
-	border: none;
-	background-color: #47a0ff;
-	border-top-right-radius: 2px;
-	border-bottom-right-radius: 2px;
-	color: #ffffff;
-	font-size: 13px;
+.searchImg {
 	margin-top: 18px;
-	margin-left: -4px;
+	margin-left: -20px;
 	outline: none;
 }
 
 .table1 {
 	width: 100%;
+	margin-top: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 8px;
-	margin-bottom: 8px;
+	margin-bottom: 1%;
 }
 
 .kotak {
-	height: 1340px;
-	padding: 0px;
+	height: 1370px;
 	display: inline-block;
 	opacity: 1;
 	border-radius: 8px;
 	border: 1px solid #CED5F2;
-	width: 720px;
+	width: 64.6%;
 	background: white;
 	box-shadow: 0 5px 5px 0;
 }
@@ -105,14 +96,14 @@
 }
 
 .judul {
-	font-size: 30px;
+	font-size: 32px;
 	font-family: Helvetica;
 	margin-left: 15px;
 }
 
 .dataDiri {
 	font-family: Helvetica;
-	font-size: 14px;
+	font-size: 16px;
 	padding-left: 15px;
 	padding-right: 25px;
 }
@@ -125,19 +116,21 @@
 	border-top: none;
 	outline: none;
 	border-radius: 8px;
-	width: 490px;
-	height: 30px;
+	width: 563px;
+	height: 38px;
 	padding-left: 10px;
 	font-family: Helvetica;
+	font-size: 16px;
 }
 
 .tableDataDiri {
 	font-family: Helvetica;
+	font-size: 16px;
 }
 
 .tanggal {
 	padding-left: 8px;
-	height: 30px;
+	height: 38px;
 	background-color: rgba(235, 235, 235, 0.4);
 	border-left: none;
 	border-right: none;
@@ -145,8 +138,9 @@
 	border-top: none;
 	outline: none;
 	border-radius: 8px;
-	width: 200px;
+	width: 270px;
 	font-family: Helvetica;
+	font-size: 16px;
 }
 
 .select {
@@ -157,9 +151,11 @@
 	border-top: none;
 	outline: none;
 	border-radius: 8px;
-	height: 30px;
-	width: 208px;
+	height: 38px;
+	width: 278px;
 	padding-left: 8px;
+	font-family: Helvetica;
+	font-size: 16px;
 }
 
 .select2 {
@@ -170,10 +166,12 @@
 	border-top: none;
 	outline: none;
 	border-radius: 8px;
-	height: 30px;
-	width: 208px;
+	height: 38px;
+	width: 279px;
 	margin-left: 10px;
 	padding-left: 8px;
+	font-family: Helvetica;
+	font-size: 16px;
 }
 
 .radio {
@@ -183,28 +181,28 @@
 }
 
 .pilihan {
-	font-size: 13px;
+	font-size: 16px;
 	font-family: Helvetica;
 	margin-left: 8px;
 }
 
 .radio2 {
 	margin-left: 130px;
-	font-size: 5px;
+	font-size: 6px;
 	height: 10px;
 }
 
 .radio3 {
-	margin-left: 131px;
-	font-size: 5px;
+	margin-left: 132px;
+	font-size: 6px;
 	height: 10px;
 }
 
 .textarea {
-	font-size: 13px;
+	font-size: 16px;
 	font-family: Helvetica;
 	height: 60px;
-	width: 493px;
+	width: 564px;
 	margin-right: 20px;
 	background-color: rgba(235, 235, 235, 0.4);
 	border-left: none;
@@ -220,7 +218,7 @@
 .garis {
 	margin-top: 20px;
 	border: 0.5px solid #ebebeb;
-	width: 675px;
+	width: 820px;
 	margin-left: 15px;
 }
 
@@ -236,6 +234,7 @@
 	margin-top: 12px;
 	margin-right: 20px;
 	outline: none;
+	font-size: 16px;
 }
 
 .button2 {
@@ -250,13 +249,15 @@
 	margin-top: 12px;
 	margin-right: 10px;
 	outline: none;
+	font-weight: bold;
+	font-size: 16px;
 }
 
 .footer {
 	width: 100%;
 	height: 150px;
 	margin-top: 11px;
-	background-color: #4b00ff; 
+	background-color: #4800ff; 
 }
 
 .footer1 {
