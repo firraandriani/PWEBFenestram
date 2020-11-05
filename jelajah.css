@@ -1,0 +1,216 @@
+.background {
+	background-color: #ebebeb;
+}
+
+* {
+	margin:0; 
+	padding: 0;
+}
+
+.menu {
+	background-color: #4800ff; 
+	font-family: open sans;
+	height: 7.8%;
+	width: 100%;
+	font-size: 14px;
+	position: fixed;
+}
+ 
+.menu ul {
+	list-style: none;
+}
+ 
+.menu ul li a {
+	float: left; 
+	width: 6.8%; 
+	height: 27px;
+	display: block; 
+	text-align: center;
+	text-decoration: none; 
+	color: #FFFFFF;
+}
+
+.menu ul li a:hover {
+	background-color: #47a0ff;
+	display: block;
+}
+
+.menu li:hover a {
+	text-align: center;
+	color: #ffffff;
+}
+
+.menu2 {
+	padding-top: 1.8%;
+}
+
+.cari {
+	margin-top: 1.8%;
+	border: none;
+	border-radius: 2px;
+	border: none;
+	height: 20px;
+	width: 120px;
+	padding-left: 8px;
+	margin-left: 4.6%;
+	outline: none;
+}
+
+.searchImg {
+	margin-top: 18px;
+	margin-left: -20px;
+	outline: none;
+}
+
+.table1 {
+	width: 100%;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1%;
+}
+
+.kotak {
+	height: 875px;
+	display: inline-block;
+	opacity: 1;
+	border-radius: 8px;
+	border: 1px solid #CED5F2;
+	width: 64.6%;
+	background-color: white;
+	box-shadow: 0 5px 5px 0;
+}
+
+.tableRekomendasi {
+	border-color: blue;
+	width: 100%;
+	align-content: center;
+	margin-top: -20px;
+}
+
+.tdRekom {
+	border: none;
+	padding-top: 1%;
+	padding-left: 2.1%;
+}
+
+.jenisBukuRekom {
+	font-size: 14px;
+	font-weight: bold;
+	color: gray;
+	padding-left: 17px;
+	font-family: Calibri;
+	border: none;
+	padding-top: 2px;
+}
+
+.judulBukuRekom {
+	font-size: 15px;
+	color: black;
+	padding-left: 17px;
+	font-family: Calibri;
+	border: none;
+	padding-top: 2px;
+}
+
+.pengarangBukuRekom {
+	font-size: 14px;
+	color: gray;
+	padding-left: 17px;
+	font-family: Calibri;
+	border: none;
+	padding-top: 2px;
+	padding-bottom: 5px;
+}
+
+.Berdasarkan {
+	font-size: 20px;
+    font-family: Calibri;
+}
+
+.pilihUsia {
+	display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    color: #838383;
+    font-family: Calibri;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.pilihBuku {
+	display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    color: #838383;
+    font-family: Calibri;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.garisBawah2 {
+	border: 0.5px solid #bdbdbd;
+}
+
+.garisBawah {
+	margin-top: -4px;
+	border: 0.5px solid #bdbdbd;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.jenisBukuBawah {
+	font-size: 16px;
+    color: red;
+    font-family: Calibri;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.judulBukuBerdasarkan {
+	font-size: 20px;
+    color: black;
+    font-family: Calibri;
+    padding-left: 5px;
+}
+
+.pengarangBukuBawah {
+	font-size: 16px;
+    color: black;
+    font-family: Calibri;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.footer {
+	width: 100%;
+	height: 150px;
+	margin-top: 11px;
+	background-color: #4800ff; 
+}
+
+.footer1 {
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-family: Helvetica;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.footer2 {
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-family: Helvetica;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.imgfoot {
+	margin-top: -110px;
+	margin-left: 640px;
+}
