@@ -18,10 +18,10 @@ body {
     line-height: 0px;
 }
 
-input {
-    font-size: 24px;
+#input input {
+    font-size: 22px;
     font-family: open sans;
-    font-weight: bolder;
+    width: 300px;
     border: none;
     line-height: 0px;
 }
@@ -41,7 +41,7 @@ button {
     padding-top: 10px;
     padding-right: 50px;
     padding-left: 50px;
-    box-shadow: 0px 12px 12px black;
+    box-shadow: 0px 12px 12px #3D24D3;
 }
 
 #Login {
