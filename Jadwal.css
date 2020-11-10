@@ -1,0 +1,175 @@
+body {
+    font-family: open sans;
+}
+
+.header {
+
+    height: 117px;
+    width: 100%;
+    background-color: #4800ff;
+    display: inline-block;
+    margin-top: -10px;
+
+}
+
+.header img {
+
+    width: 364px;
+    height: 107px;
+    margin-left: 294px;
+    margin-top: 10px;
+    float: left;
+
+}
+
+.header .navbar {
+    font-family: open sans;
+    font-weight: bolder;
+    font-size: 18px;
+    float: left;
+    margin-top: 50px;
+}
+
+.header .navbar .Jadwal {
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: -40px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.header .search {
+    box-sizing: border-box;
+    float: left;
+    font-size: 16px;
+    width: 130px;
+    margin-top: 80px;
+    margin-left: 93px;
+    padding-right: 28px;
+}
+
+.header .searchMaster img {
+    width: 17.49px;
+    height: 17.49px;
+    margin-top: 84px;
+    margin-left: -20px;
+}
+
+.header .profile img {
+    width: 103px;
+    height: 93px;
+    float: right;
+    margin-right: 400px;
+    margin-top: -107px;
+}
+
+.content .navbar2 ul li a {
+    font-family: open sans;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    border-right: 3px solid black;
+    padding-right: 50px;
+    margin-left: 20px;
+}
+
+.content .navbar2 ul .Minggu a {
+    border: none;
+}
+
+.content .navbar2 ul {
+    margin-left: 16%;
+}
+
+.content .navbar2 {
+    width: 100%;
+    height: 8.3%;
+    margin-top: -5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 3px 6px #E7E7E7;
+}
+
+.tabel {
+    margin-left: 20%;
+    padding: 10px;
+}
+
+.card {
+    width: 230px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 5px 7px 10px #E7E7E7;
+}
+
+.tabel p {
+    margin-top: 1px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.tabel img {
+    width: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+td {
+    padding-right: 50px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #4800ff;
+}
+
+.alamat,
+.Kelompok {
+    display: block;
+    margin-right: 70px;
+    font-size: 20px;
+    color: white;
+    font-family: open sans;
+
+}
+
+.footer .unej p {
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin-right: 56px;
+    float: left;
+
+}
+
+.alamat {
+    margin-left: 280px;
+}
+
+img {
+    width: 156px;
+}
+
+.unej {
+    float: right;
+    margin-right: 400px;
+    margin-top: -176px;
+}
+
+.Kelompok {
+    float: left;
+    margin-top: -200px;
+    margin-left: 753px;
+}
