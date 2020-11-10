@@ -1,3 +1,0 @@
-Ketentuan display laptop karena belum responsive:
-1. beranda, My Profile, jelajah, favorit = 1366 x 768, jika 1920 x 1080 maka di zoom menjadi 150%
-2. jadwal, Awal Masuk = 1920 x 1080, jika 1366 x 768 maka di zoom menjadi 50%
