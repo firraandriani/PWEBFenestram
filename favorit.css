@@ -1,0 +1,144 @@
+.background {
+	background-color: white;
+}
+
+* {
+	margin:0; 
+	padding: 0;
+}
+
+.menu {
+	background-color: #4800ff; 
+	font-family: open sans;
+	height: 7.8%;
+	width: 100%;
+	font-size: 14px;
+	position: fixed;
+}
+ 
+.menu ul {
+	list-style: none;
+}
+ 
+.menu ul li a {
+	float: left; 
+	width: 6.8%; 
+	height: 27px;
+	display: block; 
+	text-align: center;
+	text-decoration: none; 
+	color: #FFFFFF;
+}
+
+.menu ul li a:hover {
+	background-color: #47a0ff;
+	display: block;
+}
+
+.menu li:hover a {
+	text-align: center;
+	color: #ffffff;
+}
+
+.menu2 {
+	padding-top: 1.8%;
+}
+
+.cari {
+	margin-top: 1.8%;
+	border: none;
+	border-radius: 2px;
+	border: none;
+	height: 20px;
+	width: 120px;
+	padding-left: 8px;
+	margin-left: 4.6%;
+	outline: none;
+}
+
+.searchImg {
+	margin-top: 18px;
+	margin-left: -20px;
+	outline: none;
+}
+
+.table1 {
+	width: 100%;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1%;
+}
+
+.kotak {
+	height: 875px;
+	border-color: #4800ff; 
+	width: 64.6%;
+	background-color: rgba(211, 211, 211, 0.4);
+}
+
+.tdFavorit {
+	padding-left: 40px;
+}
+
+.boxTd {
+	background-color: white;
+	width: 130px;
+	padding-top: 10px;
+}
+
+.tdAbu {
+	background-color: rgba(211, 211, 211, 0.4);
+}
+
+.favoritImg {
+	padding: 22px;
+}
+
+.boxTd2 {
+	background-color: white;
+	width: 215px;
+	border: 0;
+	padding-top: 10px;
+}
+
+.judulBukuFavorit {
+	font-family: Segoe UI Semibold;
+	font-size: 18px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.penulisFavorit {
+	font-family: Calibri;
+	font-size: 15px;
+}
+
+.footer {
+	width: 100%;
+	height: 150px;
+	margin-top: 11px;
+	background-color: #4800ff; 
+}
+
+.footer1 {
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-family: Helvetica;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.footer2 {
+	font-size: 11px;
+	letter-spacing: 1px;
+	font-family: Helvetica;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.imgfoot {
+	margin-top: -110px;
+	margin-left: 640px;
+}
