@@ -78,6 +78,7 @@
 	width: 64.6%;
 	background-color: white;
 	box-shadow: 0 5px 5px 8px rgba(233, 235, 238, 0.8);
+	padding-bottom: 15px;
 }
 
 a {
@@ -85,30 +86,30 @@ a {
 	cursor: pointer;
 }
 
-.tablePart {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	border-color: #4800ff;
-	width: 70%;
-	text-align: justify;
+.penjelas {
+	font-family: Arial;
+	font-size: 1.1em;
 }
 
-.judulPart {
-	font-family: Calibri;
+.penjelas2 {
+	font-family: Arial;
+	font-size: 1.1em;
 	font-weight: bold;
 }
 
-.judulBuku {
-	font-family: Calibri;
-	font-weight: bold;
+.linkBook {color: #000000;}
+a.linkBook:hover {color: blue;}
+
+.boxBook {
+	box-shadow: 0 2px 2px rgba(233, 235, 238, 0.8);
+	padding: 10px;
+	border: 1px #E9EBEE;
+	margin: 0px 20px 8px 20px;
 }
 
-p {
-	padding: 15px 10px 0 10px;
-    min-height: 15px;
-    text-indent: 0.3in;
+.terakhir {
+	float: right;
+	color: grey;
 }
 
 .footer {

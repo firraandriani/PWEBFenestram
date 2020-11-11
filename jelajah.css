@@ -1,5 +1,5 @@
 .background {
-	background-color: #ebebeb;
+	background-color: #FFFFFF;
 }
 
 * {
@@ -71,14 +71,12 @@
 }
 
 .kotak {
-	height: 875px;
+	height: auto;
 	display: inline-block;
-	opacity: 1;
-	border-radius: 8px;
-	border: 1px solid #CED5F2;
 	width: 64.6%;
 	background-color: white;
-	box-shadow: 0 5px 5px 0;
+	border: 1px #E9EBEE;
+	box-shadow: 0 5px 5px 8px rgba(233, 235, 238, 0.8);
 }
 
 .tableRekomendasi {

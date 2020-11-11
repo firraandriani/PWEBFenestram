@@ -71,10 +71,11 @@
 }
 
 .kotak {
-	height: 875px;
-	border-color: #4800ff; 
+	height: auto;
 	width: 64.6%;
 	background-color: rgba(211, 211, 211, 0.4);
+	border: 1px #A9A9A9;
+	box-shadow: 0 7px 7px 6px rgba(211, 211, 211, 0.8);
 }
 
 .tdFavorit {
