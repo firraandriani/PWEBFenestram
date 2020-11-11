@@ -2,6 +2,9 @@ body {
     font-family: open sans;
 }
 
+
+/* ------Header----- */
+
 .header {
 
     height: 117px;
@@ -72,9 +75,37 @@ ul li {
     margin-top: -107px;
 }
 
+/* ------Content------ */
+
+.content {
+    width: 800px;
+    background-color: cadetblue;
+}
+
+table {
+    width: 700px;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.card {
+    width: 1000px;
+}
+
+.content .card img {
+    max-width: 200px;
+    float: left;
+}
 
 
 
+/* ------Footer----- */
 
 .footer {
     width: 100%;
