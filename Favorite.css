@@ -33,7 +33,7 @@ body {
     margin-top: 50px;
 }
 
-.header .navbar .Jadwal {
+.header .navbar .Favorit {
     border-bottom: 3px solid white;
     padding-bottom: 5px;
 }
@@ -78,32 +78,61 @@ ul li {
 /* ------Content------ */
 
 .content {
-    width: 800px;
-    background-color: cadetblue;
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 450px;
+    height: 250px;
+    background-color: white;
+    line-height: 115x;
+    text-align: justify;
+    overflow: auto;
+    padding: 10px;
+    padding-top: 1px;
+    margin-top: -40px;
+    margin-right: 50px;
 }
 
 table {
-    width: 700px;
+    border-spacing: 30px;
+}
+
+tr,
+td {
+    padding: 40px;
 }
 
 table,
 tr,
 td {
-    border: 1px solid black;
+
+    margin: 10px auto;
     border-collapse: collapse;
-    font-size: 12px;
 }
 
-.card {
-    width: 1000px;
+
+p {
+    font-weight: bolder;
 }
 
-.content .card img {
-    max-width: 200px;
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: -3px;
+}
+
+.card img {
+    width: 120px;
     float: left;
+    margin-right: 10px;
 }
-
-
 
 /* ------Footer----- */
 
