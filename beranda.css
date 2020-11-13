@@ -20,8 +20,7 @@
  
 .logo {
 	float: left;
-	margin-left: -11px;
-	margin-left: 8px;
+	margin-left: 9px;
 }
 
 .menu ul {
@@ -142,6 +141,9 @@ a {
 	border: none;
 	padding-top: 2px;
 }
+
+.linkBook {color: #000000;}
+a.linkBook:hover {color: blue;}
 
 .pengarangBukuRekom {
 	font-size: 0.85em;

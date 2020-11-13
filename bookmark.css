@@ -82,13 +82,12 @@
 }
 
 .kotak {
-	height: auto;
+	height: 500px;
 	display: inline-block;
-	opacity: 1;
-	border: 1px #E9EBEE;
 	width: 64.6%;
 	background-color: white;
-	box-shadow: 0 5px 5px 8px rgba(233, 235, 238, 0.8);
+	border: none;
+	padding-bottom: 15px;
 }
 
 a {
@@ -96,30 +95,33 @@ a {
 	cursor: pointer;
 }
 
-.tablePart {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	border-color: #4800ff;
-	width: 70%;
-	text-align: justify;
+.card {
+	box-sizing: border-box;
+	width: 350px;
+	height: 155px;
+	background-color: white;
+ 	text-align: justify;
+	overflow: auto;
+    box-shadow: 5px 7px 10px #DADADA;
+    border-radius: 20px;
 }
 
-.judulPart {
-	font-family: Calibri;
-	font-weight: bold;
+.gambar {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 12px;
+	width: 80px;
+	height: 110px;
 }
 
-.judulBuku {
-	font-family: Calibri;
-	font-weight: bold;
+.judulBukuFavorit {
+	font-family: Arial;
+	font-size: 20px;
 }
 
-p {
-	padding: 15px 10px 0 10px;
-    min-height: 15px;
-    text-indent: 0.3in;
+.penjelasan {
+	font-family: Euphemia;
+	font-size: 13px;
 }
 
 .footer {
