@@ -14,10 +14,23 @@
 			<li class="hover"><a href="favorit.html"><b>Favorit</b></a></li>
 			<li class="hover"><a href="bookmark.html"><b>Bookmark</b></a></li>
 			<li style="margin-top: -5px;"><span><input class="cari" type="search" name="cari" placeholder="Cari..."></span><span><a href="jelajah.html"><img src="Search Icon.png" alt="search" width="10" height="10" class="searchImg"></a></span></li>
-			<li><a href="FormPWEB.html"><img class="profile" src="Profil.png" width="40" height="40"></a></li>
-		</ul>
 		</ul>
 	</div>
+	<div class="popup" onclick="popupToggle();">
+		<span><img src="Profil.png" width="40" height="40"></span>
+		<ul>
+			<li style="color: #A9A9A9">Nama</li>
+			<li style="color: #A9A9A9">Tanggal Lahir</li>
+			<li><img src="images (2).png" width="25" height="25"><a href="FormPWEB.html" class="linkPage">Pengaturan Akun</a></li>
+			<li><img src="25706.png" width="25" height="25"><a href="hahaha.html" class="linkPage">Keluarkan Akun</a></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		function popupToggle(){
+			var popup = document.querySelector('.popup');
+			popup.classList.toggle('active')
+		}
+	</script>
 	<br />
 	<br />
 	<br />
@@ -35,7 +48,7 @@
 					                <table>
 					                    <tr>
 				                        	<td rowspan="4" valign="1">
-				                        		<a href="BookDearNathan.html"><img src="dear nathan.jpg" class="gambar"></a>
+				                        		<a href="ShockedSudahBookmark.html"><img src="dear nathan.jpg" class="gambar"></a>
 				                        	</td>
 				                        	<td width="190" valign="2" style="padding-top: 10px; font-weight: bold;">
 				                        		<span class="judulBukuFavorit">Dear Nathan</span>
