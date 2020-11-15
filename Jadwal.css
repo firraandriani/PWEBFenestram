@@ -30,10 +30,6 @@ body {
     margin-top: 50px;
 }
 
-.header .navbar .Jadwal {
-    border-bottom: 3px solid white;
-    padding-bottom: 5px;
-}
 
 ul li {
     display: inline-block;
