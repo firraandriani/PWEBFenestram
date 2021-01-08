@@ -25,12 +25,6 @@
 			<li><img src="../gambar/25706.png" width="25" height="25"><a href="hahaha.html" class="linkPage">Keluarkan Akun</a></li>
 		</ul>
 	</div>
-	<script type="text/javascript">
-		function popupToggle(){
-			var popup = document.querySelector('.popup');
-			popup.classList.toggle('active')
-		}
-	</script>
 	<br />
 	<br />
 	<br />
@@ -39,6 +33,7 @@
 	<tr>
 	<td align="center" valign="middle">
 		<table class="kotak">
+		<form name="profil" method="post" onsubmit="return validasi()">
 			<tr>
 				<td></td>
 				<td valign="2" colspan="2">
@@ -51,7 +46,7 @@
 					<ul class="penjelasan"> 
 						<li>Pastikan data yang anda masukkan sesuai dengan kartu identitas yang berlaku, benar, dan dapat dipertanggungjawabkan.</li>
 						<li>Inputan dengan tanda * wajib diisi.</li>
-						<li>Klik <a href="beranda.html">save</a>, jika anda sudah selesai mengubah profil Anda.</li>
+						<li>Klik tombol <a href="beranda.html">save</a>, jika anda sudah selesai mengubah profil Anda.</li>
 					</ul>
 				</td>
 			</tr>
@@ -61,17 +56,16 @@
 					<hr class="garis">
 					<br>
 					<b class="judul">DATA DIRI</b>
-					<form method="post" action="proses.php">
 						<table cellspacing="0" class="tableDataDiri">
 							<tr>
 								<td height="50" width="250"><b class="dataDiri">NIS/NIM/NIP *</b></td>
 								<td width="15"><b>:</b></td>
-								<td><input class="diri" name="NIS/NIM/NIP" type="number" placeholder="Masukkan NIS/NIM/NIP"/></td>
+								<td><input class="diri" id="nis" name="NIS/NIM/NIP" type="number" placeholder="Masukkan NIS/NIM/NIP"/></td>
 							</tr>
 							<tr>
 								<td height="50"><b class="dataDiri">Nama Lengkap *</b></td>
 								<td><b>:</b></td>
-								<td><input class="diri" name="NamaLengkap" type="text" placeholder="Masukkan Nama Lengkap Anda"/></td>
+								<td><input class="diri" id="namaLengkap" name="NamaLengkap" type="text" placeholder="Masukkan Nama Lengkap Anda"/></td>
 							</tr>
 							<tr>
 								<td height="50"><b class="dataDiri">Nama Panggilan</b></td>
@@ -82,8 +76,8 @@
 								<td height="50"><b class="dataDiri">Kota Lahir *</b></td>
 								<td><b>:</b></td>
 								<td height="40">
-									<select class="select" nama="tempatLahir" id = "tempatLahir">
-										<option value="a">-Pilih Kota-</option>
+									<select class="select" nama="tempatLahir" id="tempatLahir">
+										<option value="pilih">-Pilih Kota-</option>
 										<option value="b">Kediri</option>
 										<option value="c">Jember</option>
 										<option value="d">Blitar</option>
@@ -99,7 +93,7 @@
 							<tr>
 								<td height="50"><b class="dataDiri">Tanggal Lahir *</b></td>
 								<td><b>:</b></td>
-								<td><input class="tanggal" type="date" name="Tanggal"></td>
+								<td><input class="tanggal" id="tanggal" type="date" name="Tanggal"></td>
 							</tr>
 							<tr>
 								<td height="50"><b class="dataDiri">Nomor HP</b></td>
@@ -124,22 +118,22 @@
 							<tr>
 								<td height="50"><b class="dataDiri">Alamat Email *</b></td>
 								<td><b>:</b></td>
-								<td><input class="diri" name="AlamatEmail" type="text" placeholder="Masukkan Email"/></td>
+								<td><input class="diri" id="email" name="AlamatEmail" type="text" placeholder="Masukkan Email"/></td>
 							</tr>
 							<tr>
 								<td height="50"><b class="dataDiri">Jenis Kelamin *</b></td>
 								<td><b>:</b></td>
 								<td height="40">
-									<input class="radio" name="JenisKelamin" type="radio"/><span class="pilihan">Laki-laki</span><br>
-									<input class="radio" name="JenisKelamin" type="radio"/><span class="pilihan">Perempuan</span><br>
+									<input class="radio" name="JenisKelamin" id="male" value="male" type="radio"/><span class="pilihan">Laki-laki</span><br>
+									<input class="radio" name="JenisKelamin" id="female" value="female" type="radio"/><span class="pilihan">Perempuan</span><br>
 								</td>
-							</tr>
+							</tr>\
 							<tr>
 								<td height="50"><b class="dataDiri">Jenis Anggota *</b></td>
 								<td><b>:</b></td>
 								<td height="40">
-									<select class="select" nama="jenisAnggota" id = "jenisAnggota">
-										<option value="a">-Pilih Jenis Anggota-</option>
+									<select class="select" name="jenisAnggota" id ="jenisAnggota">
+										<option value="pilih">-Pilih Jenis Anggota-</option>
 										<option value="b">Pelajar</option>
 										<option value="c">Mahasiswa</option>
 										<option value="d">Umum</option>
@@ -152,16 +146,16 @@
 								<td height="50"><b class="dataDiri">Status Perkawinan</b></td>
 								<td><b>:</b></td>
 								<td height="40">
-									<input class="radio" name="JenisKelamin" type="radio"/><span class="pilihan">Belum Menikah</span><br>
-									<input class="radio" name="JenisKelamin" type="radio"/><span class="pilihan">Menikah</span><br>
+									<input class="radio" name="Status" id="belum" type="radio"/><span class="pilihan">Belum Menikah</span><br>
+									<input class="radio" name="Status" id="sudah" type="radio"/><span class="pilihan">Menikah</span><br>
 								</td>
 							</tr>
 							<tr>
 								<td height="50"><b class="dataDiri">Pekerjaan *</b></td>
 								<td><b>:</b></td>
 								<td height="40">
-									<select class="select" nama="kerja" id = "kerja">
-										<option value="a">-Pilih Pekerjaan-</option>
+									<select class="select" name="kerja" id="kerja">
+										<option value="pilih">-Pilih Pekerjaan-</option>
 										<option value="b">Mahasiswa</option>
 										<option value="e">Pelajar</option>
 										<option value="c">Pegawai Swasta</option>
@@ -177,15 +171,15 @@
 								<td height="50"><b class="dataDiri">Alamat Tinggal *</b></td>
 								<td><b>:</b></td>
 								<td>
-									<textarea placeholder="Masukkan Alamat Anda sesuai Identitas" class="textarea"></textarea>
+									<textarea id="alamatTinggal" placeholder="Masukkan Alamat Anda sesuai Identitas" class="textarea"></textarea>
 								</td>
 							</tr>
 							<tr>
 								<td height="20"><b class="dataDiri"></b></td>
 								<td></td>
 								<td height="30">
-									<select class="select" nama="alamatTinggal" id = "alamatTinggal">
-										<option value="a">-Pilih Kota-</option>
+									<select class="select" id="kotaTinggal">
+										<option value="pilih">-Pilih Kota-</option>
 										<option value="b">Kediri</option>
 										<option value="c">Jember</option>
 										<option value="d">Blitar</option>
@@ -196,8 +190,8 @@
 										<option value="i">Pasuruan</option>
 										<option value="j">Banyuwangi</option>
 									</select>
-									<select class="select2" nama="alamatTinggal" id = "alamatTinggal">
-										<option value="a">-Pilih Provinsi-</option>
+									<select class="select2" id="provinsi">
+										<option value="pilih">-Pilih Provinsi-</option>
 										<option value="b">Jawa Timur</option>
 										<option value="c">Jawa Tengah</option>
 										<option value="d">Jawa Barat</option>
@@ -211,7 +205,6 @@
 								</td>
 							</tr>
 						</table>
-					</form>
 				</td>
 			</tr>
 			<tr>
@@ -220,12 +213,11 @@
 					<hr class="garis">
 					<br>
 					<b class="judul">DATA PENDIDIKAN</b>
-					<form method="post" action="proses.php">
 						<table cellspacing="0" class="tableDataDiri">
 							<tr>
 								<td height="50" width="250"><b class="dataDiri">Nama Institusi *</b></td>
 								<td width="15"><b>:</b></td>
-								<td><input class="diri" name="NamaInstitusi" type="text" placeholder="Masukkan Nama Sekolah/Universitas/Instansi/Kantor"/></td>
+								<td><input class="diri" name="NamaInstitusi" id="namaInstitusi" type="text" placeholder="Masukkan Nama Sekolah/Universitas/Instansi/Kantor"/></td>
 							</tr>
 							<tr>
 								<td height="50"><b class="dataDiri">Alamat Institusi</b></td>
@@ -268,7 +260,7 @@
 								<td height="50"><b class="dataDiri">Kelas/Semester *</b></td>
 								<td><b>:</b></td>
 								<td>
-									<input class="diri" name="Kelas/Semester" type="text" placeholder="Masukkan Kelas/Semester"/>
+									<input class="diri" id="kelas" name="kelas" type="text" placeholder="Masukkan Kelas/Semester"/>
 								</td>
 							</tr>
 							<tr>
@@ -282,14 +274,14 @@
 								<td height="20"></td>
 								<td></td>
 								<td height="30">
-									<button class="button"><b>SAVE</b></button>
+									<button type="submit" name="submit" value="Kirim" class="button"><b>SAVE</b></button>
 									<input type="RESET" class="button2" value="RESET">
 								</td>
 							</tr>
 						</table>
-					</form>
 				</td>
 			</tr>
+		</form>
 		</table>
 		<table class="footer">
 			<tr>
@@ -336,5 +328,6 @@
 	</tr>
 	</table>
 	</div>
+	<script src="../js/profil.js"></script>
 </body>
 </html>
