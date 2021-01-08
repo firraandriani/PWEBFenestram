@@ -162,240 +162,112 @@ a {
 	background: linear-gradient(to bottom, #8cdda8 0%, #ffaea3 100%) no-repeat 50% 0;
 	background-size: cover;
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.firra-slider {
-	position: relative; 
+.slider{
 	overflow: hidden; 
 	background: linear-gradient(to bottom, #8cdda8 0%, #ffaea3 100%) no-repeat 50% 0;
 	margin-top: 20px;
 	width: 760px;
-	height: 380px; 
-}
- 
-.dot {
-    height: 13px;
-    width: 13px;
-    margin-top: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+	height: 380px;
 }
 
-.gambarEven {
+.slides{
+	width: 500%;
+	height: 500px;
+	display: flex;
+}
+
+.slides input{
+	display: none;
+}
+
+.slide{
+	width: 20%;
+	transition: 2s;
+}
+
+.slide img{
 	width: 760px;
 	height: 380px;
-	float: left;
-}
- 
-.isi-slider { 
-	position: absolute; 
-	width: 3900px;
- 
-	/*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
-	animation-name:slider;
-	animation-duration:16s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count:infinite;
-	-webkit-animation-name:slider;
-	-webkit-animation-duration:16s;
-	-webkit-animation-timing-function: ease-in-out;
-	-webkit-animation-iteration-count:infinite;
-	-moz-animation-name:slider;
-	-moz-animation-duration:16s;
-	-moz-animation-timing-function: ease-in-out;
-	-moz-animation-iteration-count:infinite;
-	-o-animation-name:slider;
-	-o-animation-duration:16s;
-	-o-animation-timing-function: ease-in-out;
-	-o-animation-iteration-count:infinite;
-}
- 
- 
-/*saat gambar di hover oleh cursor mouse maka berhenti slide*/
-.isi-slider:hover { 
-	-webkit-animation-play-state:paused; 
-	-moz-animation-play-state:paused; 
-	-o-animation-play-state:paused; 
-	animation-play-state:paused; }
-}
- 
-.firra-slider:after {
-	position: absolute; 
-	z-index: 12; 
-	left: 500px; 
-	top: 80px; 
-	-webkit-transition: 1s all ease-in-out; 
-	-moz-transition: 1s all ease-in-out; 
-	transition: 1s all ease-in-out; 
 }
 
-@-moz-keyframes slider {     
-	0% {
-		left: 0; opacity: 0; 
-	}     
-	2% {
-		opacity: 1; 
-	}     
-	20% {
-		left: 0; opacity: 1; 
-	}     
-	21% {
-		opacity: 0; 
-	}     
-	24% {
-		opacity: 0; 
-	}     
-	25% {
-		left: -660px; opacity: 1; 
-	}       
-	45% {
-		left: -660px; opacity: 1; 
-	}     
-	46% {
-		opacity: 0; 
-	}     
-	48% {
-		opacity: 0; 
-	}     
-	50% {
-		left: -1536px; opacity: 1; 
-	}     
-	70% {
-		left: -1536px; opacity: 1; 
-	}     
-	72% {
-		opacity: 0; 
-	}     
-	74% {
-		opacity: 0; 
-	}    
-	75% {
-		left: -2304px; opacity: 1; 
-	}   	
-	95% {
-		left: -2304px; opacity: 1; 
-	}   	
-	97% { 
-		left: -2304px; opacity: 0;
-	}   	
-	100% {
-		left: 0; opacity: 0; 
-	}
-} 
- 
-@-webkit-keyframes slider {     
-	0% {
-		left: 0; opacity: 0; 
-	}     
-	2% {
-		opacity: 1; 
-	}     
-	20% {
-		left: 0; opacity: 1; 
-	}     
-	21% {
-		opacity: 0; 
-	}     
-	24% {
-		opacity: 0; 
-	}     
-	25% {
-		left: -660px; opacity: 1; 
-	}       
-	45% {
-		left: -660px; opacity: 1; 
-	}     
-	46% {
-		opacity: 0; 
-	}     
-	48% {
-		opacity: 0; 
-	}     
-	50% {
-		left: -1536px; opacity: 1; 
-	}     
-	70% {
-		left: -1536px; opacity: 1; 
-	}     
-	72% {
-		opacity: 0; 
-	}     
-	74% {
-		opacity: 0; 
-	}    
-	75% {
-		left: -2304px; opacity: 1; 
-	}   	
-	95% {
-		left: -2304px; opacity: 1; 
-	}   	
-	97% { 
-		left: -2304px; opacity: 0;
-	}   	
-	100% {
-		left: 0; opacity: 0; 
-	}
-} 
- 
- 
-@keyframes slider {     
-	0% {
-		left: 0; opacity: 0; 
-	}     
-	2% {
-		opacity: 1; 
-	}     
-	20% {
-		left: 0; opacity: 1; 
-	}     
-	21% {
-		opacity: 0; 
-	}     
-	24% {
-		opacity: 0; 
-	}     
-	25% {
-		left: -768px; opacity: 1; 
-	}     
-	45% {
-		left: -768px; opacity: 1; 
-	}     
-	46% {
-		opacity: 0; 
-	}     
-	48% {
-		opacity: 0; 
-	}     
-	50% {
-		left: -1536px; opacity: 1; 
-	}     
-	70% {
-		left: -1536px; opacity: 1; 
-	}     
-	72% {
-		opacity: 0; 
-	}     
-	74% {
-		opacity: 0; 
-	}    
-	75% {
-		left: -2304px; opacity: 1; 
-	}   	
-	95% {
-		left: -2304px; opacity: 1; 
-	}   	
-	97% { 
-		left: -2304px; opacity: 0; 
-	} 
- 
-	100% {
-		left: 0; opacity: 0; 
-	}
+/*css for manual slide navigation*/
+
+.navigation-manual{
+	position: absolute;
+	width: 760px;
+	margin-top: -110px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn{
+	border: 2px solid #A9A9A9;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+	margin-right: 10px;
+}
+
+.manual-btn:hover{
+	background: #A9A9A9;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+	margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+	margin-left: -40%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+	position: absolute;
+	display: flex;
+	width: 760px;
+	justify-content: center;
+	margin-top: 390px;
+}
+
+.navigation-auto div{
+	border: 2px solid #A9A9A9;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+	margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background: #A9A9A9;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #A9A9A9;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #A9A9A9;
 }
 
 .tableRekomendasi {
+	margin-top: 15px;
 	border: none;
 	width: 100%;
 	align-content: center;

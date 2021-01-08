@@ -31,6 +31,14 @@
 			var popup = document.querySelector('.popup');
 			popup.classList.toggle('active')
 		}
+	    var counter = 1;
+	    setInterval(function(){
+	    	document.getElementById('radio' + counter).checked = true;
+	    	counter++;
+	    	if(counter > 3){
+	    		counter = 1;
+	    	}
+	    }, 3000);
 	</script>
 	<br />
 	<br />
@@ -42,22 +50,41 @@
 		<table class="kotak">
 			<tr valign="1" colspan="6">
 				<td class="tableEven" align="center">
-					<div class="firra-slider">
-						<div class="isi-slider">
-							<img src="../gambar/even.png" class="gambarEven">
-							<img src="../gambar/Even5.png" class="gambarEven">
-							<img src="../gambar/even6.png" class="gambarEven">
-						</div>
+					<div class="slider">
+					    <div class="slides">
+					        <!--radio buttons start-->
+					        <input type="radio" name="radio-btn" id="radio1">
+					        <input type="radio" name="radio-btn" id="radio2">
+					        <input type="radio" name="radio-btn" id="radio3">
+					        <!--radio buttons end-->
+					        <!--slide images start-->
+					        <div class="slide first">
+					        	<img src="../gambar/even.png" alt="">
+					        </div>
+					        <div class="slide">
+					        	<img src="../gambar/Even5.png" alt="">
+					        </div>
+					        <div class="slide">
+					        	<img src="../gambar/even6.png" alt="">
+					        </div>
+					        <!--slide images end-->
+					        <!--automatic navigation start-->
+					        <div class="navigation-auto">
+					        	<div class="auto-btn1"></div>
+					        	<div class="auto-btn2"></div>
+					        	<div class="auto-btn3"></div>
+					        </div>
+					        <!--automatic navigation end-->
+					    </div>
+					    <!--manual navigation start-->
+					    <div class="navigation-manual">
+					    	<label for="radio1" class="manual-btn"></label>
+					    	<label for="radio2" class="manual-btn"></label>
+					    	<label for="radio3" class="manual-btn"></label>
+					    </div>
+					    <!--manual navigation end-->
 					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<div style="text-align:center">
-					    <span class="dot"></span>
-					    <span class="dot"></span>
-					    <span class="dot"></span>
-					</div>
+				    <!--image slider end-->
 				</td>
 			</tr>
 			<tr>
