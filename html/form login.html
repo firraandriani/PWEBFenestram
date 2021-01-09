@@ -2,6 +2,7 @@
 <head>
     <title>Login-Fenstram</title>
     <link rel="stylesheet" href="../css/form login.css">
+    <script src="../js/formlogin.js"></script>
 </head>
 <body>
 
@@ -11,9 +12,9 @@
         <p>Login</p>
         <br><hr>
         <div class="perinputan">
-            <input type="email" placeholder="Email">
+            <input type="email" placeholder="Email" id="email">
             <br><hr>
-            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Password" id="pass1">
             <br><hr>
         </div>
         <input type="checkbox" id="SK">
@@ -25,7 +26,7 @@
 
         <div class="tombol">
             <a href="../index.html"><button>Mendaftar</button></a>
-            <a href="beranda.html"><input type="submit" value="Login"></a>
+            <button onclick="validateForm()" id="Login" class="login">Login</button></a>
         </div>
 
     </div>

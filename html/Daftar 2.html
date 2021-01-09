@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Set Profil</title>
     <link rel="stylesheet" href="../css/Daftar 2.css">
+    <script src="../js/daftar 2.js"></script>
 </head>
 <body>
     <img src="../gambar/Logo.png" alt="Fenestram Logo">
@@ -14,9 +15,9 @@
         <br><hr>
         <img src="../gambar/Profil.png" alt="Foto Profil">
         <div class="perinputan">
-            <input type="text" placeholder="Nama Depan">
+            <input type="text" id="namaDep" placeholder="Nama Depan">
             <br><hr>
-            <input type="text" placeholder="Nama Belakang">
+            <input type="text" id="namaBel" placeholder="Nama Belakang">
             <br><hr>
             <P>Tanggal Lahir :</P>
             <br>
@@ -24,5 +25,8 @@
         </div>
         <div class="tombol">
             <a href="../index.html"><button>Kembali</button></a>
-            <a href="beranda.html"><input type="submit" value="Mendaftar"></a>
+            <button onclick="validateForm()" class="Daftar">Mendaftar</button></a>
+        </div>
+    </div>
+</body>
 </html>
