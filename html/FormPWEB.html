@@ -33,7 +33,6 @@
 	<tr>
 	<td align="center" valign="middle">
 		<table class="kotak">
-		<form name="profil" method="post" onsubmit="return validasi()">
 			<tr>
 				<td></td>
 				<td valign="2" colspan="2">
@@ -118,7 +117,7 @@
 							<tr>
 								<td height="50"><b class="dataDiri">Alamat Email *</b></td>
 								<td><b>:</b></td>
-								<td><input class="diri" id="email" name="AlamatEmail" type="text" placeholder="Masukkan Email"/></td>
+								<td><input class="diri" id="email" name="AlamatEmail" type="email" placeholder="Masukkan Email"/></td>
 							</tr>
 							<tr>
 								<td height="50"><b class="dataDiri">Jenis Kelamin *</b></td>
@@ -274,14 +273,13 @@
 								<td height="20"></td>
 								<td></td>
 								<td height="30">
-									<button type="submit" name="submit" value="Kirim" class="button"><b>SAVE</b></button>
+									<button name="submit" value="Kirim" onclick="validasi()" class="button"><b>SAVE</b></button>
 									<input type="RESET" class="button2" value="RESET">
 								</td>
 							</tr>
 						</table>
 				</td>
 			</tr>
-		</form>
 		</table>
 		<table class="footer">
 			<tr>

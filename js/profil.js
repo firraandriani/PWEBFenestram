@@ -2,97 +2,125 @@ function popupToggle(){
 	var popup = document.querySelector('.popup');
 	popup.classList.toggle('active')
 }
+
 function validasi(){
-    if (document.forms["profil"]["nis"].value == "") {
+    
+    var validated = true;
+
+    var nis = document.getElementById('nis');
+    var namaLengkap = document.getElementById('namaLengkap');
+    var tempatLahir = document.getElementById('tempatLahir');
+    var email = document.getElementById('email');
+    var tanggal = document.getElementById('tanggal');
+    var radios = document.getElementsByName("JenisKelamin");
+    var jenisAnggota = document.getElementById('jenisAnggota');
+    var kerja = document.getElementById('kerja');
+    var alamatTinggal = document.getElementById('alamatTinggal');
+    var kotaTinggal = document.getElementById('kotaTinggal');
+    var provinsi = document.getElementById('provinsi');
+    var namaInstitusi = document.getElementById('namaInstitusi');
+    var kelas = document.getElementById('kelas');
+
+    if (nis.value == "") {
         alert("NIS/NIM/NIP tidak boleh kosong");
-        document.forms["profil"]["nis"].focus();
+        nis.focus();
+        validated = false;
         return false;
     }
 
-    if (document.forms["profil"]["namaLengkap"].value == "") {
+    if (namaLengkap.value == "") {
         alert("Nama Lengkap tidak boleh kosong");
-        document.forms["profil"]["namaLengkap"].focus();
+        namaLengkap.focus();
+        validated = false;
         return false;
     }
 
-    if (document.forms["profil"]["tempatLahir"].selectedIndex < 1) {
-        alert("Pilih Tempat Lahir");
-        document.forms["profil"]["tempatLahir"].focus();
+    if (tempatLahir.selectedIndex < 1) {
+        alert("Pilih Kota Lahir");
+        tempatLahir.focus();
+        validated = false;
         return false;
     }
 
-    // if (document.forms["profil"]["tanggal"].value == "") {
-    //     alert("Tanggal Lahir tidak boleh kosong");
-    //     document.forms["profil"]["tanggal"].focus();
-    //     return false;
-    // }
+    if (tanggal.value == "") {
+        alert("Tanggal Lahir tidak boleh kosong");
+        tanggal.focus();
+        validated = false;
+        return false;
+    }
 
-    if (document.forms["profil"]["email"].value == "") {
+    if (email.value == "") {
         alert("Alamat Email tidak boleh kosong");
-        document.forms["profil"]["email"].focus();
-        return false;
-    }
-
-    function check_radio(radio) {
-    // memeriksa apakah radio button sudah ada yang dipilih
-        for (i = 0; i < radio.length; i++) {
-            if (radio[i].checked === true) {
-                return radio[i].value;
-            }
-        }
+        email.focus();
+        validated = false;
         return false;
     }
     
-    var radio_val = check_radio(document.forms["profil"]["JenisKelamin"]);
-    if (radio_val === false) {
-        alert("Pilih Jenis Kelamin");
+    var data = null;
+    for (var i = 0, length = radios.length; i < length; i++) {
+        if (radios[i].checked) {
+            data = radios[i].value;
+                break;
+            }
+    }
+
+    if (!data) {
+        alert('Pilih Jenis Kelamin');
+        radios.focus();
+        validated = false;
         return false;
     }
 
-    if (document.forms["profil"]["jenisAnggota"].selectedIndex < 1) {
+    if (jenisAnggota.selectedIndex < 1) {
         alert("Pilih Jenis Anggota");
-        document.forms["profil"]["jenisAnggota"].focus();
+        jenisAnggota.focus();
+        validated = false;
         return false;
     }
 
-    if (document.forms["profil"]["kerja"].selectedIndex < 1) {
+    if (kerja.selectedIndex < 1) {
         alert("Pilih Pekerjaan");
-        document.forms["profil"]["kerja"].focus();
+        kerja.focus();
+        validated = false;
         return false;
     }
 
-    if (document.forms["profil"]["alamatTinggal"].value == "") {
+    if (alamatTinggal.value == "") {
         alert("Alamat Tinggal tidak boleh kosong");
-        document.forms["profil"]["alamatTinggal"].focus();
+        alamatTinggal.focus();
+        validated = false;
         return false;
     }
 
-    if (document.forms["profil"]["kotaTinggal"].selectedIndex < 1) {
+    if (kotaTinggal.selectedIndex < 1) {
         alert("Kota Tinggal tidak boleh kosong");
-        document.forms["profil"]["kotaTinggal"].focus();
+        kotaTinggal.focus();
+        validated = false;
         return false;
     }
 
-    if (document.forms["profil"]["provinsi"].selectedIndex < 1) {
+    if (provinsi.selectedIndex < 1) {
         alert("Provinsi Tinggal tidak boleh kosong");
-        document.forms["profil"]["provinsi"].focus();
+        provinsi.focus();
+        validated = false;
         return false;
     }
 
-    if (document.forms["profil"]["namaInstitusi"].value == "") {
+    if (namaInstitusi.value == "") {
         alert("Nama Institusi tidak boleh kosong");
-        document.forms["profil"]["namaInstitusi"].focus();
+        namaInstitusi.focus();
+        validated = false;
         return false;
     }
 
-    if (document.forms["profil"]["kelas"].value == "") {
+    if (kelas.value == "") {
         alert("Kelas/Semester tidak boleh kosong");
-        document.forms["profil"]["kelas"].focus();
+        kelas.focus();
+        validated = false;
         return false;
     }
 
-    else {
-        alert("Terimakasih!");
-        window.location.href = "../html/beranda.html";
+    if (validated) {
+        window.location.href = './beranda.html';
     }
 }
