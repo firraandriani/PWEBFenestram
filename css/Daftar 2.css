@@ -203,10 +203,12 @@ hr {
     .tombol button {
         width: 100px;
         font-size: 15px;
+        height: 40px;
     }
 
     .daftar {
         width: 100px;
         font-size: 15px;
+        height: 40px;
     }
 }
