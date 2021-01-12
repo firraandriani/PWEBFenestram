@@ -12,6 +12,11 @@ body {
     margin-right: auto;
 }
 
+.logo {
+    width: 365px;
+    height: 107px;
+}
+
 .content {
     box-sizing: border-box;
     width: 410px;
@@ -86,4 +91,122 @@ hr {
     font-size: 20px;
     color: white;
     border: 1px solid #707070;
+}
+
+@media only screen and (max-width: 1366px) {
+    .img {
+        width: 300px;
+        height: 90px;
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo {
+        width: 300px;
+        height: 90px;
+    }
+
+    .content {
+        box-sizing: border-box;
+        width: 350px;
+        background-color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .content img {
+        width: 120px;
+        margin: 0px 85px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .perinputan input {
+        margin-top: -10px;
+        font-size: 20px;
+        width: 285px;
+    }
+
+    hr {
+        margin-bottom: 15px;
+    }
+
+    .perinputan p {
+        padding-top: 15px;
+    }
+
+    .tombol {
+        margin-top: 10px;
+    }
+
+    .tombol button {
+        width: 141px;
+    }
+
+    .daftar {
+        width: 141px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .img {
+        width: 200px;
+        height: 60px;
+        margin-top: 20px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 60px;
+    }
+
+    .content {
+        box-sizing: border-box;
+        width: 250px;
+        background-color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .content img {
+        width: 100px;
+        margin: 0px 60px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .perinputan input {
+        margin-top: -10px;
+        font-size: 15px;
+        width: 215px;
+    }
+
+    hr {
+        margin-bottom: 8px;
+    }
+
+    .perinputan p {
+        padding-top: 10px;
+    }
+
+    .tombol {
+        margin-top: -5px;
+    }
+
+    .tombol button {
+        width: 100px;
+        font-size: 15px;
+    }
+
+    .daftar {
+        width: 100px;
+        font-size: 15px;
+    }
 }
