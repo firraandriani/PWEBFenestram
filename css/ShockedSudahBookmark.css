@@ -1,10 +1,11 @@
-.background {
-	background-color: #FFFFFF;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-* {
-	margin: 0; 
-	padding: 0;
+.background {
+	background-color: #FFFFFF;
 }
 
 .menu {
@@ -89,7 +90,7 @@
 .popup ul {
 	position: absolute;
 	background: #ffffff;
-	min-width: 148px;
+	min-width: 165px;
 	padding-top: 10px
 	padding-right: 18px;
 	padding-left: 18px;
@@ -134,170 +135,359 @@
 	margin-right: 3px;
 }
 
-.linkPage {color: #000000;}
+.linkPage {
+	color: #000000;
+	text-decoration: none;
+}
+
 a.linkPage:hover {color: #000000;}
 
-.table1 {
+.kotak{
+	max-width: 868px;
 	width: 100%;
-	margin-top: auto;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: auto;
-}
-
-.kotak {
-	height: auto;
-	display: inline-block;
-	opacity: 1;
-	border: 1px #E9EBEE;
-	width: 64.6%;
-	background-color: white;
+	background: #fff;
+	margin: 20px auto;
 	box-shadow: 0 5px 5px 8px rgba(233, 235, 238, 0.8);
-}
-
-a {
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.tablePart {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	border-color: #4800ff;
-	width: 70%;
-	text-align: justify;
+	padding: 20px;
+	border: 1px #E9EBEE;
+	align-content: center;
 }
 
 .judulPart {
 	font-family: Calibri;
 	font-weight: bold;
+	text-align: center;
 }
 
 .judulBuku {
 	font-family: Calibri;
 	font-weight: bold;
+	text-align: center;
 }
 
-p {
+.tablePart {
+	border: 1px solid #4800ff;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width: 75%;
+	text-align: justify;
+    font-family: Calibri;   
+    font-size: 1.2em;
+}
+
+.tablePart p {
 	padding: 15px 10px 0 10px;
     min-height: 15px;
     text-indent: 0.3in;
 }
 
-.footer {
+footer {
+	bottom: 0px;
 	width: 100%;
-	height: 150px;
-	margin-top: 11px;
-	background-color: #4800ff; 
+	background-color: #4800ff;
 }
 
-.footer11 {
+.semua {
+	display: flex;
+	justify-content: center;
+}
+
+.semua .box {
+	flex-basis: 22%;
+	padding: 10px 10px;
+}
+
+.box h2 {
 	font-size: 16px;
 	letter-spacing: 1px;
 	font-family: Helvetica;
 	color: #ffffff;
-	font-weight: bold;
-	padding-left: 235px;
 }
 
-.footer12 {
-	font-size: 16px;
-	letter-spacing: 1px;
-	font-family: Helvetica;
-	color: #ffffff;
-	font-weight: bold;
-	padding-left: 275px;
+.box .isi {
+	margin: 10px 0 0 0;
+	position: relative;
+	padding-left: 10px;
 }
 
-.footer13 {
-	font-size: 16px;
-	letter-spacing: 1px;
-	font-family: Helvetica;
-	color: #ffffff;
-	font-weight: bold;
-	padding-left: 170px;
-}
-
-.footer2 {
+.left .isi p {
 	font-size: 11px;
 	letter-spacing: 1px;
 	font-family: Helvetica;
 	color: #ffffff;
 	font-weight: bold;
-	padding-left: 250px;
+	padding-bottom: 8px;
+	padding-left: 10px;
 }
-
-.footer3 {
+.center .isi p {
 	font-size: 11px;
 	letter-spacing: 1px;
 	font-family: Helvetica;
 	color: #ffffff;
 	font-weight: bold;
-	padding-left: 100px;
-}
-
-.footer4 {
-	font-size: 11px;
-	letter-spacing: 1px;
-	font-family: Helvetica;
-	color: #ffffff;
-	font-weight: bold;
-	word-spacing: 49px;
-}
-
-.footer5 {
-	font-size: 11px;
-	letter-spacing: 1px;
-	font-family: Helvetica;
-	color: #ffffff;
-	font-weight: bold;
-	padding-left: 193px;
+	padding-bottom: 8px;
+	padding-left: 10px;
 }
 
 .imgfoot {
-	margin-top: -110px;
-	margin-left: 640px;
+	margin-left: 40%;
+	margin-top: -20px;
 }
 
-@media (max-width: 768px) {
-	.footer11 {
-		font-size: 16px;
-		padding-left: 1px;
+@media screen and (max-width: 1920px) {
+	.kotak{
+		max-width: 1200px;
 	}
 
-	.footer12 {
-		font-size: 12px;
-		padding-left: 155px;
+	.semua .box {
+		flex-basis: 21.5%;
+		padding: 10px 10px;
 	}
 
-	.footer13 {
-		font-size: 12px;
-		padding-left: 120px;
+	.judulPart {
+		font-size: 50px;
 	}
 
-	.footer2 {
-		font-size: 8px;
-		padding-left: 75px;
+	.judulBuku {
+		font-size: 35px;
 	}
 
-	.footer3 {
-		font-size: 8px;
-		padding-left: 25px;
+	.tablePart { 
+	    font-size: 1.8em;
 	}
 
-	.footer4 {
-		font-size: 8px;
-		word-spacing: 35px;
+	.box h2 {
+		font-size: 27px;
 	}
 
-	.footer5 {
-		font-size: 8px;
-		padding-left: 95px;
+	.left .isi p {
+		font-size: 17px;
+	}
+	.center .isi p {
+		font-size: 17px;
 	}
 
 	.imgfoot {
-		margin-left: 590px;
+		width: 160px;
+		height: 160px;
+		margin-left: 55%;
+		margin-top: -20px;
+	}
+}
+
+@media screen and (max-width: 1788px) {
+	.kotak{
+		max-width: 1050px;
+	}
+
+	.semua .box {
+		flex-basis: 20%;
+		padding: 10px 10px;
+	}
+
+	.judulPart {
+		font-size: 45px;
+	}
+
+	.judulBuku {
+		font-size: 30px;
+	}
+
+	.tablePart { 
+	    font-size: 1.5em;
+	}
+
+	.box h2 {
+		font-size: 21px;
+	}
+
+	.left .isi p {
+		font-size: 14px;
+	}
+	.center .isi p {
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (max-width: 1702px) {
+	.kotak{
+		max-width: 1000px;
+	}
+
+	.judulPart {
+		font-size: 43px;
+	}
+
+	.judulBuku {
+		font-size: 28px;
+	}
+
+	.tablePart { 
+	    font-size: 1.4em;
+	}
+
+	.box h2 {
+		font-size: 20px;
+	}
+
+	.left .isi p {
+		font-size: 13px;
+	}
+	.center .isi p {
+		font-size: 13px;
+	}
+
+}
+
+@media screen and (max-width: 1541px) {
+	.kotak{
+		max-width: 900px;
+	}
+
+	.semua .box {
+		flex-basis: 20%;
+		padding: 10px 10px;
+	}
+
+	.judulPart {
+		font-size: 40px;
+	}
+
+	.judulBuku {
+		font-size: 25px;
+	}
+
+	.tablePart { 
+	    font-size: 1.4em;
+	}
+
+	.box h2 {
+		font-size: 19px;
+	}
+
+	.left .isi p {
+		font-size: 12px;
+	}
+	.center .isi p {
+		font-size: 12px;
+	}
+	.imgfoot {
+		width: 140px;
+		height: 140px;
+		margin-left: 50%;
+		margin-top: -20px;
+	}
+}
+
+@media screen and (max-width: 1442px) {
+	.kotak{
+		max-width: 890px;
+	}
+
+	.semua .box {
+		flex-basis: 22%;
+		padding: 10px 10px;
+	}
+
+	.judulPart {
+		font-size: 38px;
+	}
+
+	.judulBuku {
+		font-size: 23px;
+	}
+
+	.tablePart { 
+	    font-size: 1.4em;
+	}
+
+	.box h2 {
+		font-size: 19px;
+	}
+
+	.left .isi p {
+		font-size: 12px;
+	}
+	.center .isi p {
+		font-size: 12px;
+	}
+	.imgfoot {
+		width: 140px;
+		height: 140px;
+		margin-left: 50%;
+		margin-top: -20px;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.semua .box {
+		flex-basis: 22%;
+		padding: 10px 10px;
+	}
+}
+
+@media screen and (max-width: 1245px) {
+	.semua .box {
+		flex-basis: 25%;
+		padding: 10px 10px;
+	}
+}
+
+@media screen and (max-width: 1093px) {
+	.semua .box {
+		flex-basis: 28%;
+		padding: 10px 10px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	footer{
+		position: relative;
+		bottom: 0px;
+	}
+	.semua{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.semua .box{
+		margin: 5px 0;
+	}
+	.imgfoot {
+		margin-top: -10px;
+		margin-left: 80px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.kotak {
+		box-shadow: none;
+	}
+
+	.tablePart {
+		border: 1px solid #4800ff;
+		width: 95%;   
+	    font-size: 0.9em;
+	}
+
+	.judulPart {
+		font-size: 22px;
+	}
+
+	.judulBuku {
+		font-size: 14px;
+	}
+
+	.box h2 {
+		font-size: 14px;
+	}
+
+	.left .isi p {
+		font-size: 9px;
+	}
+	.center .isi p {
+		font-size: 9px;
 	}
 }

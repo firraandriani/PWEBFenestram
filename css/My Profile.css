@@ -390,20 +390,134 @@ footer {
 }
 
 @media screen and (max-width: 1920px) {
+	.kotak {
+		max-width: 1200px;
+	}
+
 	.semua .box {
-		flex-basis: 15.5%;
+		flex-basis: 21.5%;
 		padding: 10px 10px;
+	}
+	
+	.box h2 {
+		font-size: 27px;
+	}
+
+	.left .isi p {
+		font-size: 17px;
+	}
+	.center .isi p {
+		font-size: 17px;
+	}
+
+	.imgfoot {
+		width: 160px;
+		height: 160px;
+		margin-left: 55%;
+		margin-top: -20px;
 	}
 }
 
-@media screen and (max-width: 1766px) {
+@media screen and (max-width: 1788px) {
+	.kotak{
+		max-width: 1050px;
+	}
+
 	.semua .box {
-		flex-basis: 18%;
+		flex-basis: 20%;
 		padding: 10px 10px;
+	}
+
+	.box h2 {
+		font-size: 21px;
+	}
+
+	.left .isi p {
+		font-size: 14px;
+	}
+	.center .isi p {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1702px) {
+	.kotak{
+		max-width: 1000px;
+	}
+
+	.box h2 {
+		font-size: 20px;
+	}
+
+	.left .isi p {
+		font-size: 13px;
+	}
+	.center .isi p {
+		font-size: 13px;
+	}
+
+}
+
+@media screen and (max-width: 1541px) {
+	.kotak{
+		max-width: 900px;
+	}
+
+	.semua .box {
+		flex-basis: 20%;
+		padding: 10px 10px;
+	}
+
+	.box h2 {
+		font-size: 19px;
+	}
+
+	.left .isi p {
+		font-size: 12px;
+	}
+	.center .isi p {
+		font-size: 12px;
+	}
+	.imgfoot {
+		width: 140px;
+		height: 140px;
+		margin-left: 50%;
+		margin-top: -20px;
+	}
+}
+
+@media screen and (max-width: 1442px) {
+	.kotak{
+		max-width: 890px;
+	}
+
+	.semua .box {
+		flex-basis: 22%;
+		padding: 10px 10px;
+	}
+
+	.box h2 {
+		font-size: 19px;
+	}
+
+	.left .isi p {
+		font-size: 12px;
+	}
+	.center .isi p {
+		font-size: 12px;
+	}
+	.imgfoot {
+		width: 140px;
+		height: 140px;
+		margin-left: 50%;
+		margin-top: -20px;
 	}
 }
 
 @media screen and (max-width: 1366px) {
+	.kotak{
+		max-width: 868px;
+	}
 	.semua .box {
 		flex-basis: 22%;
 		padding: 10px 10px;
