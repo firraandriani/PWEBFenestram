@@ -269,7 +269,7 @@ a.linkPage:hover {color: #000000;}
 	border-top: none;
 	outline: none;
 	border-radius: 8px;
-	width: 50%;
+	width: 49%;
 	font-family: Helvetica;
 	font-size: 16px;
 }
@@ -442,7 +442,7 @@ footer {
 	}
 }
 
-@media (max-width:420px) {
+@media screen and (max-width: 420px) {
 	.kotak .form .inputfield{
 		flex-direction: column;
 		align-items: flex-start;
@@ -456,5 +456,93 @@ footer {
 
 	.kotak {
 		box-shadow: none;
+	}
+
+	.judul {
+		font-size: 22px;
+	}
+	
+	.petunjuk {
+		font-size: 22px;
+	}
+
+	.penjelasan {
+		font-size: 14px;
+	}
+
+	.dataDiri {
+		font-size: 14px;
+	}
+
+	.kotak .form .inputfield .diri {
+		font-size: 14px;
+	}
+
+	.textarea {
+		font-size: 14px;
+	}
+
+	.select {
+		font-size: 14px;
+	}
+
+	.select2 {
+		font-size: 14px;
+	}
+
+	.tanggal {
+		font-size: 14px;
+	}
+
+	.pilihan {
+		font-size: 14px;
+	}
+
+	.button {
+		font-size: 14px;
+	}
+
+	.button2 {
+		font-size: 14px;
+	}
+
+	.box h2 {
+		font-size: 14px;
+	}
+
+	.left .isi p {
+		font-size: 9px;
+	}
+	.center .isi p {
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 388px) {
+	.kotak .form .inputfield{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.kotak .form .inputfield label{
+		margin-bottom: 5px;
+	}
+	.kotak .form .inputfield.terms{
+		flex-direction: row;
+	}
+
+	.kotak {
+		box-shadow: none;
+	}
+
+	.select {
+		width: 48%;
+	}
+
+	.select {
+		width: 48%;
+	}
+
+	.tanggal {
+		width: 48%;
 	}
 }
