@@ -242,23 +242,6 @@ header{
     transform: translateY(0) rotate(45deg);
 }
 
-.table1 {
-	width: 100%;
-	margin-top: auto;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: auto;
-}
-
-.kotak {
-	height: auto;
-	display: inline-block;
-	border: 1px #E9EBEE;
-	width: 64.6%;
-	background-color: white;
-	box-shadow: 0 5px 5px 8px rgba(233, 235, 238, 0.8);
-}
-
 a {
 	text-decoration: none;
 	cursor: pointer;
@@ -371,113 +354,137 @@ a {
 	background: #A9A9A9;
 }
 
-.tableRekomendasi {
-	margin-top: 15px;
-	border: none;
-	width: 100%;
-	align-content: center;
+.main {
+    margin: auto;
+    width: 100%;
+    max-width: 940px;
+    display: grid;
+    justify-items: center;
+    box-shadow: 0 5px 5px 8px rgba(233, 235, 238, 0.8);
+    border: 1px #E9EBEE;
+    font-size: 10pt;
+    font-family: open sans;
 }
 
-.tdRekom {
-	border: none;
-	padding-top: 1%;
-	padding-left: 2.1%;
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    60% {
+        left: -100%;
+    }
+
+    100% {
+        left: 0%;
+    }
 }
 
-.gambarRekom {
-	width: 100px;
-	height: 140px;
+.event {
+    width: 99%;
 }
 
-.jenisBukuRekom {
-	font-size: 0.85em;
-	font-weight: bold;
-	color: gray;
-	padding-left: 17px;
-	font-family: Calibri;
-	border: none;
-	padding-top: 2px;
+#slider {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #8cdda8 0%, #ffaea3 100%) no-repeat 50% 0;
+
 }
 
-.judulBukuRekom {
-	font-size: 0.9em;
-	color: black;
-	padding-left: 17px;
-	font-family: Calibri;
-	border: none;
-	padding-top: 2px;
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0px;
+    animation: 20s slider infinite;
 }
 
-.linkBook {color: #000000;}
-a.linkBook:hover {color: blue;}
-
-.pengarangBukuRekom {
-	font-size: 0.85em;
-	color: gray;
-	padding-left: 17px;
-	font-family: Calibri;
-	border: none;
-	padding-top: 2px;
-	padding-bottom: 5px;
+#slider figure img {
 }
 
-.Berdasarkan {
-	font-size: 1.25em;
-    font-family: Calibri;
+.rekomendasi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
-.pilihUsia {
-	display: inline-block;
-    vertical-align: top;
-    font-size: 18px;
-    color: #838383;
-    font-family: Calibri;
+.rekomendasi .header {
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 2px solid #bdbdbd;
+}
+
+.rekomendasi select {
+    width: 50%;
+    justify-self: end;
     border: none;
-    outline: none;
-    font-weight: bold;
 }
 
-.pilihBuku {
-	display: inline-block;
-    vertical-align: top;
-    font-size: 18px;
-    color: #838383;
-    font-family: Calibri;
-    border: none;
-    outline: none;
-    font-weight: bold;
+.rekomendasi img {
+    width: 100px;
 }
 
-.garisBawah2 {
-	border: 0.5px solid #bdbdbd;
+.rekomendasi .chard {
+    display: flex;
+    border-bottom: 2px solid #bdbdbd;
+    align-items: center;
 }
 
-.garisBawah {
-	margin-top: -4px;
-	border: 0.5px solid #bdbdbd;
-}
-
-.jenisBukuBawah {
-	font-size: 16px;
+.rekomendasi .kategori {
+    font-size: 0.8em;
     color: red;
-    font-family: Calibri;
-    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.rekomendasi .judul {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rekomendasi .penulis {
+    font-size: 0.8em;
+}
+
+.rekomendasi .tulisan {
+    margin-left: 20px;
+}
+
+.recfy {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.recfy .buku {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 50px;
+}
+
+.recfy img {
+    width: 100px;
+}
+
+.recfy .kategori {
+    font-size: 0.8em;
+    color: red;
+}
+
+.recfy .judul {
     font-weight: bold;
 }
 
-.judulBukuBerdasarkan {
-	font-size: 20px;
-    color: black;
-    font-family: Calibri;
-    padding-left: 5px;
-}
-
-.pengarangBukuBawah {
-	font-size: 16px;
-    color: black;
-    font-family: Calibri;
-    padding-left: 5px;
-    font-weight: bold;
+.recfy .penulis {
+    font-size: 0.8em;
 }
 
 footer {
@@ -541,35 +548,6 @@ footer {
 	.semua .box {
 		flex-basis: 21.5%;
 		padding: 10px 10px;
-	}
-
-	.grid-container div{
-		font-size: 25px;
-
-	}
-
-	.item2 {margin-left: 40px;}
-	.item6 {margin-left: 40px;}
-	.item9 {margin-left: 40px;}
-	.item12 {margin-left: 40px;}
-	.item15 {margin-left: 40px;}
-	.item18 {margin-left: 40px;}
-
-	.item1 img {
-		width: 140px;
-		height: 200px;
-	}
-
-	.deskripsi { 
-		font-size: 1.6em;
-	}
-
-	.linkBook {
-		font-size: 1.5em;
-	}
-
-	.terakhir {
-		font-size: 1.5em;
 	}
 
 	.box h2 {
@@ -713,34 +691,6 @@ footer {
 	.semua .box {
 		flex-basis: 22%;
 		padding: 10px 10px;
-	}
-
-	.grid-container div{
-		font-size: 0.9em;
-	}
-
-	.deskripsi { 
-		font-size: 1em;
-	}
-
-	.item2 {margin-left: 10px;}
-	.item6 {margin-left: 10px;}
-	.item9 {margin-left: 10px;}
-	.item12 {margin-left: 10px;}
-	.item15 {margin-left: 10px;}
-	.item18 {margin-left: 10px;}
-
-	.item1 img {
-		width: 95px;
-		height: 140px;
-	}
-
-	.linkBook {
-		font-size: 0.96em;
-	}
-
-	.terakhir {
-		font-size: 0.96em;
 	}
 }
 
@@ -946,30 +896,6 @@ footer {
 		box-shadow: none;
 	}
 
-	.grid-container div{
-		font-size: 11.5px;
-
-	}
-
-	.item2 {margin-left: 90px;}
-	.item6 {margin-left: 90px;}
-	.item9 {margin-left: 90px;}
-	.item12 {margin-left: 90px;}
-	.item15 {margin-left: 90px;}
-	.item18 {margin-left: 90px;}
-
-	.deskripsi { 
-		font-size: 0.8em;
-	}
-
-	.linkBook {
-		font-size: 0.7em;
-	}
-
-	.terakhir {
-		font-size: 0.7em;
-	}
-
 	.box h2 {
 		font-size: 14px;
 	}
@@ -981,4 +907,90 @@ footer {
 	.center .isi p {
 		font-size: 9px;
 	}
+}
+
+@media screen and (max-width: 1366px) {
+    .main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-widt: 768px) {
+    .main {
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    @keyframes slider {
+        0% {
+            left: -26%;
+        }
+
+        20% {
+            left: -160%;
+        }
+
+        40% {
+            left: -280%;
+        }
+
+        60% {
+            left: -160%;
+        }
+
+        100% {
+            left: -30%;
+        }
+    }
+
+    body {
+        display: grid;
+        justify-items: center;
+    }
+
+    #slider {
+        overflow: hidden;
+    }
+
+    #slider figure img {
+        width: 310px;
+    }
+
+    .main {
+        margin: 0px;
+        width: 90%;
+        justify-items: center;
+    }
+
+    .main .rekomendasi {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .recfy .header {
+        border-bottom: 2px solid black;
+    }
+
+    .main .recfy img {
+        width: 100%;
+    }
+
+    .main .recfy {
+        padding: 0px;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .main .buku {
+        margin-top: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+    }
+
+    .header {
+        font-weight: bold;
+    }
 }
