@@ -781,13 +781,22 @@ footer {
     	width: 100%;
     }
 
-    img {
+    .rekomendasi img {
 	    width: 70%;
 	    height: 70%;
 	}
 
-	.rekomendasi .berdasarkan {
-		font-size: 11px;
+    .recfy img {
+        width: 70%;
+        height: 70%;
+    }
+
+    .byAge .berdasarkan {
+        font-size: 9px;
+    }
+
+	.byKategori .berdasarkan {
+		font-size: 9px;
 	}
 
 	.rekomendasi select {
