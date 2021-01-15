@@ -1,8 +1,3 @@
-function popupToggle(){
-	var popup = document.querySelector('.popup');
-	popup.classList.toggle('active')
-}
-
 function validasi(){
     
     var validated = true;
